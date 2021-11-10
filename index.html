@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/1404496a1c.js" crossorigin="anonymous"></script>
+  <title>GDSC university of Batna 2</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="log">
+    <img src="images/intro.jpg">
+  </div>
+  <form action="acceuil.html" class="login-form">
+      <h1>
+         GDSC university of Batna 2</h1>
+      <h3>Connectez-vous pour recevoir toutes les notifications</h3>
+      <form action="index.php" method="post">
+    <div class="textb">
+      <input type="text"name="username" required>
+      <div class="placeholder">Adresse email</div>
+    </div>
+
+    <div class="textb">
+      <input type="password" name="password" required>
+      <div class="placeholder">Mot de passe</div>
+      <div class="show-password fas fa-eye-slash"></div>
+    </div>
+
+    <div class="checkbox">
+      <input type="checkbox">
+      <div class="fas fa-check"></div>
+      Eregistrer le mot de passe
+    </div>
+
+    <button class="btn fas fa-arrow-right" disabled></button>
+    <a href="acceuil.html">continuer sans connecter</a>
+  </form>
+  </form>
+
+  <script>
+    var fields = document.querySelectorAll(".textb input");
+    var btn = document.querySelector(".btn");
+    function check(){
+      if(fields[0].value != "" && fields[1].value != "")
+        btn.disabled = false;
+      else
+        btn.disabled = true;  
+    }
+
+    fields[0].addEventListener("keyup",check);
+    fields[1].addEventListener("keyup",check);
+
+    document.querySelector(".show-password").addEventListener("click",function(){
+      if(this.classList[2] == "fa-eye-slash"){
+        this.classList.remove("fa-eye-slash");
+        this.classList.add("fa-eye");
+        fields[1].type = "text";
+      }else{
+        this.classList.remove("fa-eye");
+        this.classList.add("fa-eye-slash");
+        fields[1].type = "password";
+      }
+    });
+  </script>
+</body>
+</html>

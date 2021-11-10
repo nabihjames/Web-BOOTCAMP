@@ -1,0 +1,63 @@
+html, body{
+    height: 100%;
+      font-family: Century Gothic, Gothic;
+      font-size: 25px;
+      margin: 0px;
+      padding: 0px;
+      background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/sayagata-400px.png);
+  }
+  h1{
+      font-size: 50px;
+      text-align: center;
+      color: rgb(27, 27, 27);
+  }
+  h2{
+    font-size: 28px;
+    text-align: left;
+    color: #000000;
+  }
+  img{
+  border-radius: 5%;
+  }
+  body{
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/spikes.png
+    );
+}
+nav{
+	width: 38%;
+	background-color: #013d97;
+}
+nav li{
+	list-style-type: none;
+	float: left;
+}
+nav a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 20px 30px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 28px;
+}
+div#content{
+  display: block;
+}
+
+.menu-nav{
+	display: inline-block;
+	margin: 0 auto;
+	text-transform: uppercase;
+	text-shadow: #000000;
+	text-decoration: solid;
+}
+.acc:hover{
+    border-top: 5px solid #FF000B;
+}
+.contact:hover{
+	border-top: 5px solid #e6f14f;
+}
+.video{
+    position: absolute;
+    right: 400px;
+}
+
